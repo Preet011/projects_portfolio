@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeu Pierre, Feuille, Ciseaux</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Jouons à Pierre, Feuille, Ciseaux !</h1>
+    <main>
+      <details class="rules-container">
+        <summary>Règles du jeu</summary>
+
+        <p>Vous jouerez contre l'ordinateur.</p>
+        <p>Vous pouvez choisir entre Pierre, Feuille et Ciseaux.</p>
+        <p>Le premier à trois points gagne.</p>
+
+        <p>Voici les règles pour obtenir un point dans le jeu :</p>
+        <ul>
+          <li>Pierre bat Ciseaux</li>
+          <li>Ciseaux bat Feuille</li>
+          <li>Feuille bat Pierre</li>
+        </ul>
+        <p>
+          Si le joueur et l'ordinateur choisissent la même option (ex. Feuille et
+          Feuille), alors personne ne gagne de point.
+        </p>
+      </details>
+
+      <div class="score-container">
+        <strong
+          >Player Score: <span class="score" id="player-score">0</span></strong
+        >
+        <strong
+          >Computer Score:
+          <span class="score" id="computer-score">0</span></strong
+        >
+      </div>
+
+      <section class="options-container">
+        <h2>Choisissez une option :</h2>
+        <div class="btn-container">
+          <button id="rock-btn" class="btn">Pierre</button>
+          <button id="paper-btn" class="btn">Feuille</button>
+          <button id="scissors-btn" class="btn">Ciseaux</button>
+        </div>
+      </section>
+
+      <div class="results-container">
+        <p id="results-msg"></p>
+        <p id="winner-msg"></p>
+        <button class="btn" id="reset-game-btn">Rejouer ?</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
