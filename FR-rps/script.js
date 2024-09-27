@@ -1,15 +1,15 @@
 
 function getRandomComputerResult() {
-    const options = ["Rock", "Paper", "Scissors"];
+    const options = ["Pierre", "Feuille", "Ciseaux"];
     const randomIndex = Math.floor(Math.random() * options.length);
     return options[randomIndex];
   }
   
   function hasPlayerWonTheRound(player, computer) {
     return (
-      (player === "Rock" && computer === "Scissors") ||
-      (player === "Scissors" && computer === "Paper") ||
-      (player === "Paper" && computer === "Rock")
+      (player === "Pierre" && computer === "Ciseaux") ||
+      (player === "Ciseaux" && computer === "Feuille") ||
+      (player === "Feuille" && computer === "Pierre")
     );
   }
   
@@ -21,12 +21,12 @@ function getRandomComputerResult() {
   
     if (hasPlayerWonTheRound(userOption, computerResult)) {
       playerScore++;
-      return `Player wins! ${userOption} beats ${computerResult}`;
+      return `Player gagne! ${userOption} bat ${computerResult}`;
     } else if (computerResult === userOption) {
-      return `It's a tie! Both chose ${userOption}`;
+      return `Égalité ! Les deux ont choisi ${userOption}`;
     } else {
       computerScore++;
-      return `Computer wins! ${computerResult} beats ${userOption}`;
+      return `Computer gagne! ${computerResult} bat ${userOption}`;
     }
   }
   
@@ -45,7 +45,7 @@ function getRandomComputerResult() {
     if (playerScore === 3 || computerScore === 3) {
       winnerMsgElement.innerText = `${
         playerScore === 3 ? "Player" : "Computer"
-      } has won the game!`;
+      } a gagné le jeu !`;
   
       resetGameBtn.style.display = "block";
       optionsContainer.style.display = "none";
@@ -70,13 +70,13 @@ function getRandomComputerResult() {
   const scissorsBtn = document.getElementById("scissors-btn");
   
   rockBtn.addEventListener("click", function () {
-    showResults("Rock");
+    showResults("Pierre");
   });
   
   paperBtn.addEventListener("click", function () {
-    showResults("Paper");
+    showResults("Feuille");
   });
   
   scissorsBtn.addEventListener("click", function () {
-    showResults("Scissors");
+    showResults("Ciseaux");
   });
