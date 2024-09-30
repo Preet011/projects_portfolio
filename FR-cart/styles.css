@@ -7,25 +7,25 @@
 }
 
 :root {
-  --light-blue: #e0f7fa; /* Light blue background */
-  --light-green: #c8e6c9; /* Soft green for cards */
-  --dark-gray: #424242; /* Dark gray for text */
-  --white: #ffffff; /* White for text and backgrounds */
-  --light-yellow: #fff9c4; /* Light yellow for buttons */
-  --gold: #ffd54f; /* Gold for button text */
-  --deep-orange: #ffab40; /* Deep orange for hover effects */
+  --light-blue: #e0f7fa; 
+  --light-green: #c8e6c9; 
+  --dark-gray: #424242; 
+  --white: #ffffff; 
+  --light-yellow: #fff9c4; 
+  --gold: #ffd54f; 
+  --deep-orange: #ffab40; 
 }
 
 body {
   background-color: var(--light-blue);
-  font-family: Arial, sans-serif; /* Set a clean font */
+  font-family: Arial, sans-serif; 
 }
 
 .title {
   color: var(--dark-gray);
   text-align: center;
   margin: 25px 0;
-  font-size: 2rem; /* Slightly larger font size */
+  font-size: 2rem;
 }
 
 #dessert-card-container {
@@ -33,7 +33,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px; /* Add some padding around the container */
+  padding: 20px; 
 }
 
 .dessert-card {
@@ -42,43 +42,43 @@ body {
   text-align: center;
   border-radius: 15px;
   margin: 20px 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
-  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for scaling effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s, box-shadow 0.3s; 
 }
 
 .dessert-card:hover {
-  transform: scale(1.05); /* Scale up on hover */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
 }
 
 .dessert-price {
-  font-size: 1.5rem; /* Increase font size for prices */
-  color: var(--dark-gray); /* Use dark gray for prices */
+  font-size: 1.5rem; 
+  color: var(--dark-gray);
 }
 
 .btn {
   display: block;
   cursor: pointer;
-  width: 120px; /* Slightly wider buttons */
+  width: 120px; 
   color: var(--dark-gray);
-  background-color: var(--light-yellow); /* Changed to light yellow */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  padding: 10px; /* Add padding */
-  font-size: 1rem; /* Standardize button text size */
-  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+  background-color: var(--light-yellow);
+  border: none; 
+  border-radius: 5px;
+  padding: 10px; 
+  font-size: 1rem; 
+  transition: background-color 0.3s, transform 0.2s; 
 }
 
 .btn:hover {
-  background-color: var(--deep-orange); /* Softer hover color */
-  transform: translateY(-2px); /* Slight upward movement on hover */
+  background-color: var(--deep-orange);
+  transform: translateY(-2px); 
 }
 
 #cart-btn {
-  position: fixed; /* Keep it fixed */
+  position: fixed; 
   top: 20px;
   right: 20px;
-  z-index: 1000; /* Ensure it's above other elements */
+  z-index: 1000;
 }
 
 .add-to-cart-btn {
@@ -87,7 +87,7 @@ body {
 
 #cart-container {
   display: none;
-  position: fixed; /* Keep the cart fixed in place */
+  position: fixed;
   top: 70px;
   right: 20px;
   background-color: var(--white);
@@ -97,13 +97,13 @@ body {
   border-radius: 15px;
   text-align: center;
   font-size: 1.2rem;
-  overflow-y: auto; /* Change to auto for better scrolling */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  transition: all 0.3s ease; /* Smooth transition for cart visibility */
+  overflow-y: auto; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease; 
 }
 
 .product {
-  margin: 20px 0; /* Adjusted spacing for products */
+  margin: 20px 0; 
 }
 
 .product-count {
@@ -113,21 +113,21 @@ body {
 
 .product-category {
   margin: 10px 0;
-  color: var(--dark-gray); /* Darker color for categories */
+  color: var(--dark-gray); 
 }
 
 @media (min-width: 768px) {
   #dessert-card-container {
     flex-direction: row;
-    justify-content: space-around; /* Space around dessert cards */
+    justify-content: space-around;
   }
 
   .dessert-card {
     flex: 1 0 21%;
-    margin: 20px; /* Maintain space around cards */
+    margin: 20px; 
   }
 
   #cart-container {
-    width: 300px; /* Maintain width for larger screens */
+    width: 300px; 
   }
 }
