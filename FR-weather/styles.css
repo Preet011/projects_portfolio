@@ -1,5 +1,5 @@
 
-/* Global Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* Body Styling */
+
 body {
     background: linear-gradient(135deg, #83a4d4, #b6fbff);
     display: flex;
@@ -18,7 +18,7 @@ body {
     color: #333;
 }
 
-/* Main container */
+
 .main {
     background-color: #fff;
     padding: 20px;
@@ -29,14 +29,14 @@ body {
     text-align: center;
 }
 
-/* Title Styling */
+
 h1 {
     font-size: 2rem;
     color: #2c3e50;
     margin-bottom: 20px;
 }
 
-/* Form Styling */
+
 form {
     margin-bottom: 20px;
 }
